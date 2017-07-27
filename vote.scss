@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/*init*/
+html {
+  font-size: 125%;
+  font-family: Arial, "Times New Roman", "Microsoft YaHei", SimSun, SimHei;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*font*/
+h5{
+  font-size: 0.8rem;
+  margin: 10px 0;
+  font-weight: 500;
+}
+/*btn*/
+.btn{
+  cursor: pointer;
+}
+/*col and row*/
+$width: 33.33333333%;
+.col-xs-4{
+  width: $width;
+  float: left;
+}
+/*header*/
+header{
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 8px;
+  background-color: #34BEDE;
+  display: flex;
+  justify-content: space-between;
+  .title{
+    margin-left: 34px;
+    margin-right: 34px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    cursor: default;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 27px;
+    color: #FFF;
+  }
+  %label{
+    background-size: 70.8px;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background-color: #34BEDE;
+    background-image: url("vote.png");
+    background-repeat: no-repeat;
+  }
+  .l-label{
+    @extend %label;
+    width: 24px;
+    height: 24.5px;
+    background-position: 0 -32.4px;
+    margin-left: 10px;
+  }
+  .r-label{
+    @extend %label;
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    background-position: -24.6px -32.4px;
+  }
+}
+/*msin*/
+main{
+  margin-top: 50px;
+  z-index:1;
+  .notice{
+    background-color: #B9E9F5;
+    padding: 5px 23px;
+    vertical-align: middle;
+    color: black;
+    .bb1{
+      padding: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-image: url("vote.png");
+      background-repeat: no-repeat;
+      background-size: 70.8px;
+      float: right;
+      position: absolute;
+      top: 57px;
+      right: 5px;
+      border: none;
+      outline: none;
+      text-align: center;
+      line-height: 32px;
+      color: #FFF;
+    }
+    #a{
+      display: none;
+      &:checked+.bb1{
+        background-image: none;
+        background-color: #FBB435;
+        &:after{
+          content: "| |";
+        }
+      }
+    }
+  }
+  .triangle-down{
+    margin-top: -1px;
+    margin-left: 7px;
+    width: 0;
+    border: solid;
+    border-top-color: #B9E9F5;
+    border-left-color: #34BEDE;
+    border-right-color: #34BEDE;
+    border-bottom-color: #34BEDE;
+    border-top-width: 10px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+  }
+  .m1{
+    background-color: #34BEDE;
+    padding-left: 30px;
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>投票</title>
+    <link href="normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="vote.css">
+</head>
+<body>
+<header>
+    <button type="button" class="btn l-label"></button>
+    <h4 class="title">投票</h4>
+    <a href="index.html"><button type="button" class="btn r-label"></button></a>
+</header>
+<main>
+    <div class="notice">
+        <h5>发言讨论结束，大家请投票</h5>
+        <label for="a">
+            <input type="checkbox" id="a">
+            <div onclick="a()" class="bb1 btn"></div>
+        </label>
+        <audio src="财富自由.mp3" id="music"></audio>
+    </div>
+    <div class="m1">
+        <div style="height: 35px">
+                <div style="height: 15px"><div class="triangle-down"></div></div>
+                <div style="height: 15px;font-size: 0.7rem;color: #FFF">&ensp;点击得票数最多人的头像</div>
+        </div>
+    </div>
+</main>
+<script>
+    function a(){
+        var audio=document.getElementById('music');
+        if(audio.paused){
+            audio.play();//播放
+        }
+        else{
+            audio.pause();//暂停
+        }
+    }
+</script>
+</body>
+</html>
