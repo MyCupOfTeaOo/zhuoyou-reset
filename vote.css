@@ -4,7 +4,8 @@ html {
   font-family: Arial, "Times New Roman", "Microsoft YaHei", SimSun, SimHei;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #34BEDE; }
 
 /*font*/
 h5 {
