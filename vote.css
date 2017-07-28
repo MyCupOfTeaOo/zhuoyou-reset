@@ -71,7 +71,7 @@ header {
 main {
   background-color: #34BEDE;
   margin-top: 50px;
-  margin-bottom: 90px;
+  padding-bottom: 90px;
   z-index: 1; }
   main .notice {
     background-color: #B9E9F5;
